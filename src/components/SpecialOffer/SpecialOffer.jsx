@@ -16,7 +16,7 @@ const SpecialOffer = () => {
   // Fetch menu items
   useEffect(() => {
     axios
-      .get('http://localhost:4000/api/items')
+      .get('https://food-delivery-websitefrontend-verce.vercel.app/api/items')
       .then(res => setItems(res.data.items ?? res.data))
       .catch(err => console.error(err));
   }, []);
