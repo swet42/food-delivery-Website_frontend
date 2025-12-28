@@ -32,7 +32,7 @@ const CheckoutPage = () => {
       if (paymentStatus === 'success' && sessionId) {
         // Confirm the payment and create order on the backend
         axios.post(
-          'https://swet42-food-delivery-website-backen.vercel.app/api/orders/confirm',
+          'https://swet42-food-delivery-website-backend.onrender.com/api/orders/confirm',
           { sessionId },
           { headers: authHeaders }
         )
@@ -85,7 +85,7 @@ const CheckoutPage = () => {
       if (formData.paymentMethod === 'online') {
         // Initiate payment session; do NOT create order or clear cart yet
         const { data } = await axios.post(
-          'https://swet42-food-delivery-website-backen.vercel.app/api/orders',
+          'https://swet42-food-delivery-website-backend.onrender.com/api/orders',
           payload,
           { headers: authHeaders }
         );
@@ -94,7 +94,7 @@ const CheckoutPage = () => {
       } else {
         // Cash on Delivery: directly create order
         const { data } = await axios.post(
-          'https://swet42-food-delivery-website-backen.vercel.app/api/orders',
+          'https://swet42-food-delivery-website-backend.onrender.com/api/orders',
           payload,
           { headers: authHeaders }
         );

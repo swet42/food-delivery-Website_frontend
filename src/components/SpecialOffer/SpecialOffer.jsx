@@ -16,7 +16,7 @@ const SpecialOffer = () => {
   // Fetch menu items
   useEffect(() => {
     axios
-      .get('https://swet42-food-delivery-website-backen.vercel.app/api/items')
+      .get('https://swet42-food-delivery-website-backend.onrender.com/api/items')
       .then(res => setItems(res.data.items ?? res.data))
       .catch(err => console.error(err));
   }, []);

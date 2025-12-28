@@ -30,7 +30,7 @@ const VerifyPaymentPage = () => {
         }
 
         // Stripe says success=true & we have a session_id:
-        axios.get('https://swet42-food-delivery-website-backen.vercel.app/api/orders/confirm', {
+        axios.get('https://swet42-food-delivery-website-backend.onrender.com/api/orders/confirm', {
             params: { session_id },
             headers: authHeaders
         })
