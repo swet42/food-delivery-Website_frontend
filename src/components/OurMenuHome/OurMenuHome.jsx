@@ -15,7 +15,7 @@ const OurMenuHome = () => {
   const cartItems = rawCart.filter(ci => ci.item);
 
   useEffect(() => {
-    axios.get('https://food-delivery-websitefrontend-verce.vercel.app/api/items')
+    axios.get('https://swet42-food-delivery-website-backen.vercel.app/api/items')
       .then(res => {
         const grouped = res.data.reduce((acc, item) => {
           acc[item.category] = acc[item.category] || [];

@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 import { inputBase, iconClass } from '../../assets/dummydata';
 
-const url = 'https://food-delivery-websitefrontend-verce.vercel.app'
+const url = 'https://swet42-food-delivery-website-backen.vercel.app'
 
 const Login = ({ onLoginSuccess, onClose }) => {
   const [formData, setFormData] = useState({
